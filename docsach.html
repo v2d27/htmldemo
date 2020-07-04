@@ -9,8 +9,8 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-   
-    
+
+
     <style>
         .fr_hr {
             margin-bottom: 0.2rem;
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    
+
     <div id="banner">
         <div class="container-fluid">
             <div class="row">
@@ -45,38 +45,20 @@
     <hr class="fr_hr">
     <div id="main">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-3 p-0" style="">
-
-                    <h1 style="font-weight: bolder; text-transform: uppercase; color:red;text-align: center;">mục lục
-                    </h1>
+            <div class="row" style=" height: 80vh; ">
+                <div class="col-3 p-0" style="height: 100%;overflow: hidden;overflow-y: auto;" >
+                    <h3 style="font-weight: bolder; text-transform: uppercase; color:red;text-align: center;">mục lục
+                    </h3>
                     <ul class="list-group menu">
                         <li class="list-group-item">
-                            <a href="index.html"   >Trang chủ</a>
+                            <a href="index.html">Trang chủ</a>
                         </li>
-                        <li class="list-group-item" >
-                            <a href="#" value ="chuong1"  onclick="view(this);" >Chuong 1</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#" value ="chuong2" onclick="view(this);" >Chuong 2</a>
-                        </li>
-                       
-                        <li class="list-group-item">
-                            <a href="#" value ="pp"  onclick="view(this);">PP</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#" value ="playmp3" onclick="view(this);" >Play mp3</a>
-                        </li>
-
                     </ul>
-
                 </div>
                 <div class="col-1 p-0 bg-dark" id="resize" style="flex: 0 0 0.333333%; cursor: w-resize;"
                     height="530px"></div>
                 <div class="col p-0">
-
-                    <iframe id="ifview" src=""  width="100%" height="530px"></iframe>
-
+                    <iframe id="ifview" src="suppage/chuong1.html" width="100%" height="100%"></iframe>
                 </div>
             </div>
         </div>
