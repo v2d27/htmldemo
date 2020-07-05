@@ -8,8 +8,8 @@ function view(item) {
     let duoifile = $(item).attr("value") == 1 ? ".htm" : ".html";
     $("#ifview").attr("src", "suppage/" + idfile + duoifile);
     if ($(item).attr("value") == 0) {
-        $("#show_view").css("padding","0");
-    }else $("#show_view").css("padding-top","0vh");
+        $("#show_view").css("padding", "0");
+    } else $("#show_view").css("padding-top", "0vh");
 
 
 
