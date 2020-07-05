@@ -24,44 +24,106 @@
 </head>
 
 <body>
+    <div class="container">
+        <div id="banner">
+            <div class="container-fluid">
+                <div class="row">
 
-    <div id="banner">
-        <div class="container-fluid">
-            <div class="row">
+                    <div class="col">
+                        <div class="format_title">
+                            <p style="color: red;"> binh chủng thông tin liên lạc</p>
+                            <p style="color: blue;"> trường sĩ quan thông tin</p>
+                        </div>
+                    </div>
 
-                <div class="col">
-                    <div class="format_title">
-                        <p style="color: red;"> binh chủng thông tin liên lạc</p>
-                        <p style="color: blue;"> trường sĩ quan thông tin</p>
+                </div>
+            </div>
+
+        </div>
+        <hr class="fr_hr">
+        <marquee style="margin-bottom: 0; color: blue;">bỏ chữ vô chạy thui </marquee>
+        <hr class="fr_hr">
+        <div id="main">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="pos">
+                        <nav class="navbar bg-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="">Mục Lục</span>
+                            </button>
+                        </nav>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <a class="nav-link " href="index.html">Trang Chủ</a>
+
+                                    <a class="nav-link active " value=1 name="Lời mở đầu" data-toggle="pill"
+                                        href="#show_view" aria-selected="true" onclick="view(this)">Giới Thiệu </a>
+
+                                    <a class="nav-link" value="1" name="Cau 1 - TL" data-toggle="pill" href="#show_view"
+                                        aria-selected="false" onclick="view(this);">Cau 1 - TL</a>
+                                    <a class="nav-link" value="1" name="Cau 2 - TL" data-toggle="pill" href="#show_view"
+                                        aria-selected="false" onclick="view(this);">Cau 2 - TL</a>
+                                    <a class="nav-link" value="0" name="playmp3" data-toggle="pill" href="#show_view"
+                                        aria-selected="false" onclick="view(this);">PlayMP3</a>
+                                    <a class="nav-link" value="0" name="pp" data-toggle="pill" href="#show_view"
+                                        aria-selected="false" onclick="view(this);">pp</a>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <style>
+                                .tab-content>.active {
+                                    height: 77vh;
+                                }
+
+                                #ifview {
+                                    border: none;
+                                }
+                            </style>
+                            <!-- thay đổi id ,aria-labelledby = ... + -tab-->
+                            <div class="tab-pane active" id="show_view">
+                                <iframe id="ifview" src="suppage/Lời mở đầu.htm" width="100%" height="100%"></iframe>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
-        </div>
 
-    </div>
-    <hr class="fr_hr">
-    <marquee style="margin-bottom: 0; color: blue;">bỏ chữ vô chạy thui </marquee>
-    <hr class="fr_hr">
-    <div id="main">
-        <div class="container-fluid">
-            <div class="row" style=" height: 80vh; ">
-                <div class="col-3 p-0" style="height: 100%;overflow: hidden;overflow-y: auto;" >
-                    <h3 style="font-weight: bolder; text-transform: uppercase; color:red;text-align: center;">mục lục
-                    </h3>
-                    <ul class="list-group menu">
-                        <li class="list-group-item">
-                            <a href="index.html">Trang chủ</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-1 p-0 bg-dark" id="resize" style="flex: 0 0 0.333333%; cursor: w-resize;"
-                    height="530px"></div>
-                <div class="col p-0">
-                    <iframe id="ifview"  src="suppage/chuong1.html" width="100%" height="100%"></iframe>
-                </div>
-            </div>
+
+            <!--
+                    <div class="col-3 p-0" style="height: 100%;overflow: hidden;overflow-y: auto;" id="divmenu">
+                        <h3 style="font-weight: bolder; text-transform: uppercase; color:red;text-align: center;">mục
+                            lục
+                        </h3>
+                        <ul class="list-group menu">
+                            <li class="list-group-item">
+                                <a href="index.html">Trang chủ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-1 p-0 bg-dark" id="resize" onclick="dragend();"
+                        style="flex: 0 0 0.333333%; cursor: w-resize;" height="530px"></div>
+                       <div class="col p-0">
+                        <iframe id="ifview" src="suppage/chuong1.html" width="100%" height="100%"></iframe>
+                    </div>
+                    --->
         </div>
+    </div>
+    </div>
     </div>
 </body>
 <script src="js/docsach.js"></script>
