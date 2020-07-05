@@ -54,7 +54,7 @@
                                     aria-controls="navbarToggleExternalContent" aria-expanded="false"
                                     aria-label="Toggle navigation">
                                     <span class="text-center"><img id="iconMenu" src="image/icon/book.png" style="
-                                        width: 34px;
+                                        width: 48px;
                                     "></span>
                                 </button>
                             </nav>
@@ -62,15 +62,24 @@
                                 <div class="">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
                                         aria-orientation="vertical">
-                                        <style >
+                                        <style>
+                                            .nav-link{
+                                                color: #ff1717;
+                                                font-weight: bold;
+                                            }
+                                            .nav-link:hover {
+                                                color: #ffffffd1;
+                                                background: #b98f8fe0 !important;
+                                               
+                                            }
                                             .nav-link.active,
                                             .show>.nav-link {
-                                                color: #f00 !important;
-                                                font-weight: bold;
-                                                background-color: #6fffde82 !important;
+                                                color: #fffffff0 !important;
+                                                
+                                                background-color: #ea6565 !important;
                                             }
                                         </style>
-                                        <a class="nav-link " href="index.html">Trang Chủ</a>
+                                        <a class="" href="#" style="font-weight: bold; text-align: center; text-decoration: none;cursor:default ;">Mục Lục</a>
 
                                         <a class="nav-link active " value=1 name="Lời mở đầu" data-toggle="pill"
                                             href="#show_view" aria-selected="true" onclick="view(this)">Giới Thiệu </a>
@@ -104,7 +113,8 @@
 
 
                                         <a class="nav-link" value="0" name="playmp3" data-toggle="pill"
-                                            href="#show_view" aria-selected="false" onclick="view(this);">PlayMP3</a>
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nhạc truyền
+                                            thống Thông Tin</a>
                                         <a class="nav-link" value="0" name="pp" data-toggle="pill" href="#show_view"
                                             aria-selected="false" onclick="view(this);">pp</a>
 

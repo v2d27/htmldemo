@@ -9,7 +9,7 @@ function view(item) {
     $("#ifview").attr("src", "suppage/" + idfile + duoifile);
     if ($(item).attr("value") == 0) {
         $("#show_view").css("padding","0");
-    }else $("#show_view").css("padding","8vh");
+    }else $("#show_view").css("padding-top","8vh");
 
 
 
