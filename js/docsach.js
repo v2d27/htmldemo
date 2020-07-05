@@ -16,6 +16,9 @@ function view(item) {
 
 }
 
+$("#pos").mouseleave(function(){
+    $("#btnMenu").click();
+})
 
 $("#btnMenu").click(function () {
     let val = $("#pos").attr("val")
